@@ -1,11 +1,11 @@
-#  Movie Recommendation System (MovieLens)
+# Movie Recommendation System (MovieLens)
 
 A hybrid movie recommender system using **Truncated SVD** + **genre features** + **cosine kNN** on the [MovieLens 25M dataset](https://grouplens.org/datasets/movielens/25m/).  
 Includes a **search widget** and a clean **modular Python implementation**.
 
 ---
 
-##  Features
+## Features
 
 - Filters out **inactive users/movies** (less than 5 user ratings, less than 20 movie ratings)
 -  Learns **movie embeddings** with TruncatedSVD
@@ -15,16 +15,16 @@ Includes a **search widget** and a clean **modular Python implementation**.
 
 ---
 
-## 📥 Setup & Installation
+## Setup & Installation
 
 Run these commands step by step in your terminal (or command prompt):
 
 ```bash
-git clone https://github.com/<your-username>/movie-recommender.git
+git clone https://github.com/2sahil/Movie-Recommendation-System.git
 cd movie-recommender
 python -m venv .venv
 source .venv/bin/activate   # Windows: .venv\Scripts\activate
-pip install -r requirements.txt
+pip install -r requirements.txt ```
 
 Download ratings.csv and movies.csv from MovieLens 25M
 and place them into a data/ folder:
@@ -34,13 +34,14 @@ movie-recommender/
     ├── ratings.csv
     └── movies.csv
 Run this command to get recommendations for a movie:
-python scripts/run_demo.py --ratings data/ratings.csv --movies data/movies.csv --title "The Godfather (1972)"
+```bash
+python scripts/run_demo.py --ratings data/ratings.csv --movies data/movies.csv --title "The Godfather (1972)" ```
 
 Jupyter Notebook Demo:
-jupyter notebook notebooks/demo.ipynb
+```bash
+jupyter notebook notebooks/demo.ipynb```
 
 License & Data
 
-This repository uses the publicly available MovieLens 25M dataset but does not redistribute it (see DATASET.md).
-Please download from the official MovieLens website
-.
+This repository utilizes the publicly available MovieLens 25M dataset, which is not redistributed (see DATASET.md).
+Please download from the official MovieLens website.
