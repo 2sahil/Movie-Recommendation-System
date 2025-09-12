@@ -15,5 +15,5 @@ Includes a **search widget** and a clean **modular Python implementation**.
 
 ---
 
-## 📂 Repository Structure
+##  Repository Structure
 
