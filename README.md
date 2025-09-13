@@ -23,7 +23,8 @@ git clone https://github.com/2sahil/Movie-Recommendation-System.git
 cd movie-recommender
 python -m venv .venv
 source .venv/bin/activate   # Windows: .venv\Scripts\activate
-pip install -r requirements.txt ```
+pip install -r requirements.txt
+```
 
 Download ratings.csv and movies.csv from MovieLens 25M
 and place them into a data/ folder:
@@ -38,7 +39,8 @@ python scripts/run_demo.py --ratings data/ratings.csv --movies data/movies.csv -
 
 Jupyter Notebook Demo:
 ```
-jupyter notebook notebooks/demo.ipynb```
+jupyter notebook notebooks/demo.ipynb
+```
 
 License & Data
 
