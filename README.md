@@ -18,8 +18,8 @@ Includes a **search widget** and a clean **modular Python implementation**.
 ## Setup & Installation
 
 Run these commands step by step in your terminal (or command prompt):
-
-```git clone https://github.com/2sahil/Movie-Recommendation-System.git
+```
+git clone https://github.com/2sahil/Movie-Recommendation-System.git
 cd movie-recommender
 python -m venv .venv
 source .venv/bin/activate   # Windows: .venv\Scripts\activate
@@ -33,12 +33,12 @@ movie-recommender/
     ├── ratings.csv
     └── movies.csv
 Run this command to get recommendations for a movie:
-
-```python scripts/run_demo.py --ratings data/ratings.csv --movies data/movies.csv --title "The Godfather (1972)" ```
+```
+python scripts/run_demo.py --ratings data/ratings.csv --movies data/movies.csv --title "<The Godfather (1972)>" ```
 
 Jupyter Notebook Demo:
-
-```jupyter notebook notebooks/demo.ipynb```
+```
+jupyter notebook notebooks/demo.ipynb```
 
 License & Data
 
