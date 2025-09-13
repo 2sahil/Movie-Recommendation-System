@@ -19,7 +19,7 @@ Includes a **search widget** and a clean **modular Python implementation**.
 
 Run these commands step by step in your terminal (or command prompt):
 
-```bash
+```
 git clone https://github.com/2sahil/Movie-Recommendation-System.git
 cd movie-recommender
 python -m venv .venv
@@ -34,11 +34,11 @@ movie-recommender/
     ├── ratings.csv
     └── movies.csv
 Run this command to get recommendations for a movie:
-```bash
+```
 python scripts/run_demo.py --ratings data/ratings.csv --movies data/movies.csv --title "The Godfather (1972)" ```
 
 Jupyter Notebook Demo:
-```bash
+```
 jupyter notebook notebooks/demo.ipynb```
 
 License & Data
