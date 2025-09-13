@@ -28,14 +28,16 @@ pip install -r requirements.txt
 
 Download ratings.csv and movies.csv from MovieLens 25M
 and place them into a data/ folder:
-
+```
 movie-recommender/
 └── data/
     ├── ratings.csv
     └── movies.csv
+```
 Run this command to get recommendations for a movie:
 ```
-python scripts/run_demo.py --ratings data/ratings.csv --movies data/movies.csv --title "<The Godfather (1972)>" ```
+python scripts/run_demo.py --ratings data/ratings.csv --movies data/movies.csv --title "<The Godfather (1972)>"
+```
 
 Jupyter Notebook Demo:
 ```
