@@ -36,15 +36,16 @@ movie-recommender/
 ```
 Run this command to get recommendations for a movie:
 ```
-python scripts/run_demo.py --ratings data/ratings.csv --movies data/movies.csv --title "<The Godfather (1972)>"
+python scripts/run_demo.py --ratings data/ratings.csv --movies data/movies.csv --title "The Godfather (1972)"
 ```
 
 Jupyter Notebook Demo:
 ```
 jupyter notebook notebooks/demo.ipynb
 ```
+---
 
-License & Data
+## License & Data
 
 This repository utilizes the publicly available MovieLens 25M dataset, which is not redistributed (see DATASET.md).
 Please download from the official MovieLens website.
