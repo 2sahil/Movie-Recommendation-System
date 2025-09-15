@@ -42,7 +42,8 @@ pip install -U pip setuptools wheel
 pip install -r requirements.txt
 
 # 5. Run the app
-python app.py ``` 
+python app.py
+``` 
 
 When python app.py runs successfully, Gradio will open local URL (in this app, http://127.0.0.1:7860).
 
@@ -58,18 +59,21 @@ Movie-Recommendation-System/
 │   └── recommender.py
 └── data/
     ├── ratings.csv
-    └── movies.csv```
+    └── movies.csv
+```
 
     ---
 
 ### **Quick Test (Optional)**
 
 To quickly check that the recommender works without starting the UI:
-```python - <<'PY'
+```
+python - <<'PY'
 from src.recommender import HybridRecommender
 r = HybridRecommender().fit("data/ratings.csv", "data/movies.csv")
 print(r.recommend("The Godfather", top_n=5))
-PY```
+PY
+```
 
 ---
 
