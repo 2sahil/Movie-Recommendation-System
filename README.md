@@ -1,51 +1,83 @@
 # Movie Recommendation System (MovieLens)
 
-A hybrid movie recommender system using **Truncated SVD** + **genre features** + **cosine kNN** on the [MovieLens 25M dataset](https://grouplens.org/datasets/movielens/25m/).  
-Includes a **search widget** and a clean **modular Python implementation**.
+A hybrid movie recommender system built with  
+Truncated SVD, genre features, and cosine k-NN,  
+designed for the [MovieLens 25M dataset](https://grouplens.org/datasets/movielens/25m/).
+
+Includes:
+- A clean, modular Python implementation (`src/recommender.py`)
+- A Gradio web app for interactive exploration
+- TF-IDF title search + fuzzy matching
 
 ---
 
 ## Features
 
-- Filters out **inactive users/movies** (less than 5 user ratings, less than 20 movie ratings)
--  Learns **movie embeddings** with TruncatedSVD
--  Adds **genre features** with configurable weight
--  Finds **similar movies** using cosine similarity (k-NN)
--  Includes **TF-IDF title search** + fuzzy matching
+- Filters out inactive movies/users (configurable thresholds)
+- Learns latent movie embeddings with Truncated SVD
+- Adds genre one-hot vectors with adjustable weight
+- Computes similar movies using cosine similarity
+- Provides title search with TF-IDF + fuzzy matching
+- Simple Gradio interface to explore recommendations
 
 ---
 
-## Setup & Installation
+## Setup & Run
 
-Run these commands step by step in your terminal (or command prompt):
+Run these commands from your terminal in the project root:
+
 ```
+# 1. Clone the repo
 git clone https://github.com/2sahil/Movie-Recommendation-System.git
-cd movie-recommender
-python -m venv .venv
-source .venv/bin/activate   # Windows: .venv\Scripts\activate
-pip install -r requirements.txt
-```
+cd Movie-Recommendation-System
 
-Download ratings.csv and movies.csv from MovieLens 25M
-and place them into a data/ folder:
+# 2. Create & activate a virtual environment
+python3 -m venv .venv
+source .venv/bin/activate        # Windows (PowerShell): .\.venv\Scripts\Activate.ps1
+
+# 3. Upgrade base tools (recommended)
+pip install -U pip setuptools wheel
+
+# 4. Install dependencies
+pip install -r requirements.txt
+
+# 5. Run the app
+python app.py ``` 
+
+When python app.py runs successfully, Gradio will open local URL (in this app, http://127.0.0.1:7860).
+
+---
+
+### **Data Setup ** 
+
+Download ratings.csv and movies.csv from MovieLens 25M, then place them in a data/ folder in the project root:
 ```
-movie-recommender/
+Movie-Recommendation-System/
+├── app.py
+├── src/
+│   └── recommender.py
 └── data/
     ├── ratings.csv
-    └── movies.csv
-```
-Run this command to get recommendations for a movie:
-```
-python scripts/run_demo.py --ratings data/ratings.csv --movies data/movies.csv --title "The Godfather (1972)"
-```
+    └── movies.csv```
 
-Jupyter Notebook Demo:
-```
-jupyter notebook notebooks/demo.ipynb
-```
+    ---
+
+### **Quick Test (Optional)**
+
+To quickly check that the recommender works without starting the UI:
+```python - <<'PY'
+from src.recommender import HybridRecommender
+r = HybridRecommender().fit("data/ratings.csv", "data/movies.csv")
+print(r.recommend("The Godfather", top_n=5))
+PY```
+
 ---
 
-## License & Data
+###**License & Data**
+This project uses the publicly available MovieLens 25M dataset, which is not redistributed here — please download it from the official site.
 
-This repository utilizes the publicly available MovieLens 25M dataset, which is not redistributed (see DATASET.md).
-Please download from the official MovieLens website.
+---
+
+## Preview
+
+![Movie Recommender Screenshot](assets/demo.png)
