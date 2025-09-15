@@ -7,3 +7,5 @@ __pycache__/
 data/
 *.csv
 *.zip
+.DS_Store
+
