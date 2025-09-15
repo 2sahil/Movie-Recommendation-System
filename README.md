@@ -77,7 +77,7 @@ PY
 
 ---
 
-###**License & Data**
+## License & Data
 This project uses the publicly available MovieLens 25M dataset, which is not redistributed here — please download it from the official site.
 
 ---
