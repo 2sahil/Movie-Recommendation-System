@@ -47,7 +47,7 @@ When python app.py runs successfully, Gradio will open local URL (in this app, h
 
 ---
 
-### **Data Setup ** 
+### Data Setup
 
 Download ratings.csv and movies.csv from MovieLens 25M, then place them in a data/ folder in the project root:
 ```
