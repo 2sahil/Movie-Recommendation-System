@@ -1,8 +1,6 @@
 # Movie Recommendation System (MovieLens)
 
-A hybrid movie recommender system built with  
-Truncated SVD, genre features, and cosine k-NN,  
-designed for the [MovieLens 25M dataset](https://grouplens.org/datasets/movielens/25m/).
+A hybrid movie recommender system built with Truncated SVD, genre features, and cosine k-NN, designed for the [MovieLens 25M dataset](https://grouplens.org/datasets/movielens/25m/).
 
 Includes:
 - A clean, modular Python implementation (`src/recommender.py`)
@@ -78,7 +76,7 @@ PY
 ---
 
 ## License & Data
-This project uses the publicly available MovieLens 25M dataset, which is not redistributed here — please download it from the official site.
+This project uses the publicly available MovieLens 25M dataset, which is not redistributed here — please download it from the official site. https://grouplens.org/datasets/movielens/25m/https://grouplens.org/datasets/movielens/25m/
 
 ---
 
