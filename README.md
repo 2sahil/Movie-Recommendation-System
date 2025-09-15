@@ -64,7 +64,7 @@ Movie-Recommendation-System/
 
     ---
 
-### **Quick Test (Optional)**
+### Quick Test (Optional)
 
 To quickly check that the recommender works without starting the UI:
 ```
